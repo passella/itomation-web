@@ -1,0 +1,13 @@
+<div class="card flex justify-content-center">
+  <form [formGroup]="formGroup">
+    <fieldset class="radio-group">
+      <legend>{{ title }}</legend>
+      @for (option of options; track option.id) {
+        <div class="field-radio">
+          <p-radioButton [inputId]="option.id" [value]="option" formControlName="{{ controlName }}"/>
+          <label [for]="option.id">{{ option.nome }}</label>
+        </div>
+      }
+    </fieldset>
+  </form>
+</div>

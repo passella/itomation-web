@@ -1,0 +1,13 @@
+<div class="card flex justify-content-center">
+  <form [formGroup]="formGroup">
+    <fieldset class="dropdown">
+      <legend>{{ title }}</legend>
+      <p-dropdown
+        formControlName="{{ controlName }}"
+        [options]="options"
+        optionLabel="{{optionLabel}}"
+        placeholder="{{placeHolder}}"
+      />
+    </fieldset>
+  </form>
+</div>

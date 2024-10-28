@@ -1,0 +1,15 @@
+<ul class="etapas-lista">
+  @for (etapa of etapas; track etapa.idProposta) {
+    <li class="etapa-item">
+      <div class="etapa-nome">{{ etapa.nome }}</div>
+      <div class="etapa-descricao">{{ etapa.descricao }}</div>
+      <div class="etapa-datas">
+        <span>Início: {{ etapa.dataInicio }}</span> |
+        <span>Fim: {{ etapa.dataFim }}</span>
+      </div>
+    </li>
+  }
+  @empty {
+    <li class="etapa-item">Nenhuma etapa disponível.</li>
+  }
+</ul>

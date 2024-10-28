@@ -1,0 +1,12 @@
+<div class="card flex justify-content-start">
+  <p-menu #menu [model]="items" [popup]="true"></p-menu>
+  <p-button (onClick)="menu.toggle($event)">
+    <img ngSrc="https://www.itau.com.br/media/dam/m/59ca6000bfbf59d6/original/ITAU_LOGO_HEX_48X48.png" alt="Menu Icon" width="32" height="32" />
+  </p-button>
+  <p-dropdown
+      [options]="ambientes"
+      [(ngModel)]="ambienteSelecionado"
+      optionLabel="nome"
+      placeholder="Selecione um ambiente"
+  />
+</div>

@@ -1,0 +1,49 @@
+.proposta-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "formulario painel";
+  grid-gap: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+
+  .formulario-proposta, .painel-acompanhamento {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .formulario-proposta {
+    grid-area: formulario;
+  }
+
+  .painel-acompanhamento {
+    grid-area: painel;
+  }
+
+  .titulo-painel {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Linha discreta */
+    margin: 10px 0; /* Espaçamento superior e inferior */
+  }
+}
+
+@media (max-width: 768px) {
+  .proposta-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "formulario"
+      "painel";
+  }
+}

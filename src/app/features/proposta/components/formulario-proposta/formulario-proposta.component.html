@@ -1,0 +1,16 @@
+<div class="card flex justify-content-center">
+  <form class="formulario-proposta" [formGroup]="formGroup">
+    <app-radio-group [formGroup]="formGroup" [options]="canais" title="Canal" controlName="canalSelecionado"/>
+    <app-radio-group [formGroup]="formGroup" [options]="seguimentos" title="Seguimento" controlName="seguimentoSelecionado"/>
+    <app-dropdown [formGroup]="formGroup" [options]="modalidades" title="Modalidade" controlName="modalidadeSelecionada" placeHolder="Selecione uma modalidade" optionLabel="nome"/>
+    <app-dropdown [formGroup]="formGroup" [options]="formalizacoes" title="Formalização" controlName="formalizacaoSelecionada" placeHolder="Selecione a formalização"
+                  optionLabel="nome"/>
+    <app-input-number [formGroup]="formGroup" title="Código Banco" controlName="codigoBanco"/>
+    <app-input-number [formGroup]="formGroup" title="Nº Agencia" controlName="numeroAgencia"/>
+    <app-input-number [formGroup]="formGroup" title="Nº Conta" controlName="numeroConta"/>
+    <app-input-number [formGroup]="formGroup" title="Dígito Conta" controlName="digitoConta"/>
+    <app-input-number [formGroup]="formGroup" title="Código Meio Pagamento" controlName="codigoMeioPagamento"/>
+    <app-input-number [formGroup]="formGroup" title="Código Tipo Conta" controlName="codigoTipoConta"/>
+    <app-radio-group [formGroup]="formGroup" [options]="contaPrincipalOptions" title="Conta Principal" controlName="contaPrincipal"/>
+  </form>
+</div>

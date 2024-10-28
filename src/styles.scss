@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "primeng/resources/themes/vela-orange/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:root {
+  --primary-color: #FF6200;
+}
+
+:host {
+  background-color: var(--primary-color);
+}
+
+.p-button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color) ;
+}
+
+p-inputnumber, .p-inputnumber {
+  width: 100%;
+}
+
+.p-dropdown {
+  width: 100%;
+}
