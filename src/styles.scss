@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import "primeng/resources/themes/vela-orange/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
-
 
 html, body {
   padding: 0;
@@ -19,9 +16,10 @@ html, body {
   background-color: var(--primary-color);
 }
 
+
 .p-button {
   background-color: var(--primary-color);
-  border-color: var(--primary-color) ;
+  border-color: var(--primary-color);
 }
 
 p-inputnumber, .p-inputnumber {
@@ -30,4 +28,8 @@ p-inputnumber, .p-inputnumber {
 
 .p-dropdown {
   width: 100%;
+}
+
+.custom-dropdown .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight.p-focus {
+  background: rgba(125, 125, 125, 0.25);
 }
